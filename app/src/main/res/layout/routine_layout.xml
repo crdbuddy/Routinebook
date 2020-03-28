@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="@string/internet"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnStudy"
+        app:layout_constraintEnd_toStartOf="@+id/btnStudy"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/study"
+        app:layout_constraintBottom_toTopOf="@+id/btnWorkout"
+        app:layout_constraintEnd_toStartOf="@+id/btnWork"
+        app:layout_constraintStart_toEndOf="@+id/btnSleep" />
+
+    <Button
+        android:id="@+id/btnWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/work"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnStudy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStudy" />
+
+    <Button
+        android:id="@+id/btnDine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="@string/dine"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnWorkout"
+        app:layout_constraintEnd_toStartOf="@+id/btnWorkout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/workout"
+        app:layout_constraintBottom_toTopOf="@+id/btnSocial"
+        app:layout_constraintEnd_toStartOf="@+id/btnGame"
+        app:layout_constraintStart_toEndOf="@+id/btnDine" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/game"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnWorkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnWorkout" />
+
+    <Button
+        android:id="@+id/btnNap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="@string/shop"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSocial"
+        app:layout_constraintEnd_toStartOf="@+id/btnSocial"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/outdoor"
+        app:layout_constraintBottom_toTopOf="@+id/btnChore"
+        app:layout_constraintEnd_toStartOf="@+id/btnGroom"
+        app:layout_constraintStart_toEndOf="@+id/btnNap" />
+
+    <Button
+        android:id="@+id/btnGroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/groom"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSocial" />
+
+    <Button
+        android:id="@+id/btnRelax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/relax"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnChore"
+        app:layout_constraintStart_toStartOf="@+id/btnNap" />
+
+    <Button
+        android:id="@+id/btnChore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="111dp"
+        android:text="@string/chore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnSocial" />
+
+    <TextView
+        android:id="@+id/iAmDoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/current_status"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/n_a"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iAmDoing" />
+
+    <Button
+        android:id="@+id/btnDrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:text="@string/drive"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnChore"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

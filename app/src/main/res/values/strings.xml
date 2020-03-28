@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Routinebook</string>
+    <string name="routinebook">Routinebook</string>
+    <string name="routines">routines</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="voicebtn">voiceBtn</string>
+    <string name="clear_all_routine">Clear all routine</string>
+    <string name="sleep">sleep</string>
+    <string name="study">study</string>
+    <string name="work">work</string>
+    <string name="dine">dine</string>
+    <string name="n_a">N/A</string>
+    <string name="chart">chart</string>
+    <string name="drive">drive</string>
+    <string name="current_status">Current Status</string>
+    <string name="chore">chore</string>
+    <string name="relax">relax</string>
+    <string name="groom">groom</string>
+    <string name="social">social</string>
+    <string name="nap">nap</string>
+    <string name="game">game</string>
+    <string name="workout">workout</string>
+    <string name="clear">Clear</string>
+    <string name="internet">internet</string>
+    <string name="shopping">shopping</string>
+    <string name="outdoor">outdoor</string>
+    <string name="shop">shop</string>
+</resources>
